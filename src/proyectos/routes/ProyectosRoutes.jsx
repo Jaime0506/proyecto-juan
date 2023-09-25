@@ -1,28 +1,24 @@
-import { Link, Route, Routes } from "react-router-dom";
-import { Home } from "../pages/Home";
-import { Sistemas } from "../pages/Sistemas";
-import { Dibujo } from "../pages/Dibujo";
+import { Route, Routes } from "react-router-dom";
+import { Inicio, Sistemas, Dibujo, Electricidad, Electronica, MecanicaAuto, MecanicaIndus, Metalisteria, ProyectosGrado } from "../pages";
+
+import { Navbar } from "../components/Navbar";
 
 export const ProyectosRoutes = () => {
     // + /proyectos/
     return (
         <>
-            <ul>
-                <li>
-                    <Link to="/proyectos/">Inicio</Link>
-                </li>
-                <li>
-                    <Link to="/proyectos/sistemas">Sistemas</Link>
-                </li>
-                <li>
-                    <Link to="/proyectos/dibujo">dibujo</Link>
-                </li>
-            </ul>
+            <Navbar />
 
             <Routes>
-                <Route path="/*" element={<Home />} />
+                <Route path="/*" element={<Inicio />} />
                 <Route path="/sistemas" element={<Sistemas />} />
                 <Route path="/dibujo" element={<Dibujo />} />
+                <Route path="/metalisteria" element={<Metalisteria />} />
+                <Route path="/mecanica_auto" element={<MecanicaAuto />} />
+                <Route path="/mecanica_indus" element={<MecanicaIndus />} />
+                <Route path="/electricidad" element={<Electricidad />} />
+                <Route path="/electronica" element={<Electronica />} />
+                <Route path="/grado" element={<ProyectosGrado />} />
             </Routes>
         </>
     );
