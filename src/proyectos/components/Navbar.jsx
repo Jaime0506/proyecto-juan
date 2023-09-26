@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
+import { useAuthStore } from "../../hooks/useAuthStore"
 
 
 export const Navbar = () => {
+    const { status, handleOnLogout } = useAuthStore()
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#51f948" }} id="nav">
             <div className="container-fluid">
@@ -41,6 +44,10 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/proyectos/grado" >Proyectos de Grado</Link>
+                        </li>
+                        <li>
+                            {status == "not-authenticated" && <Link to="/auth/login" >Inicia Sesion</Link>}
+                            {status == "authenticated" && <button onClick={handleOnLogout}>CERRAR SESION</button>}
                         </li>
                     </ul>
                 </div>
