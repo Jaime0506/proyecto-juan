@@ -17,11 +17,10 @@ import imagen15 from "../../img/sistemas/IMG (10).webp"
 
 import profe from "../../img/sistemas/profe.webp"
 
-
 export const Sistemas = () => {
   return (
-    <div className="container mt-3 justify-content-center">
-      {/* <!--CONTENEDOR CON EL CUERPO DE LA PÁGINA --> */}
+    <div className="container mt-3 justify-content-center" > 
+    {/* <!--CONTENEDOR CON EL CUERPO DE LA PÁGINA --> */}
       <div className="shadow shadow-lg" id="contenedorText">
         <h1 className="text-center shadow">SISTEMAS Y COMPUTACIÓN</h1>
         {/* <!----> */}

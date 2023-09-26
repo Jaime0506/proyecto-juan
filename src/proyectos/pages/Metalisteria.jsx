@@ -1,5 +1,5 @@
 export const Metalisteria = () => {
   return (
-    <div>Metalisteria</div>
+    <div>Metalisterianinsana menete</div>
   )
 }
