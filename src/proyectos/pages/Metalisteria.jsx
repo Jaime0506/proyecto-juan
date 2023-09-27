@@ -1,26 +1,47 @@
-import pelufoImg from '../../img/metalisteria/PELUFO.jpg'
+import pelufoImg from '../../img/metalisteria/PELUFO_11zon.webp'
+import imagen1 from "../../img/metalisteria/2002.i515.001_modern_students_flat_icons-13_11zon.webp"
+import imagen2 from "../../img/metalisteria/15094_11zon.webp/"
+import imagen3 from "../../img/metalisteria/IMG_2020_11zon.webp"
+import imagen4 from "../../img/metalisteria/IMG_2021_11zon.webp"
+import imagen5 from "../../img/metalisteria/IMG_2022_11zon.webp"
+import imagen6 from "../../img/metalisteria/IMG_2025_11zon.webp"
+import imagen7 from "../../img/metalisteria/IMG_2026_11zon.webp"
+import imagen8 from "../../img/metalisteria/IMG_2027_11zon.webp"
+import imagen9 from "../../img/metalisteria/IMG_2029_11zon.webp"
+import imagen10 from "../../img/metalisteria/IMG_2030_11zon.webp"
+import imagen11 from "../../img/metalisteria/IMG_2031_11zon.webp"
+import imagen12 from "../../img/metalisteria/IMG_9361_11zon.webp"
+import imagen13 from '../../img/metalisteria/IMG_9362_11zon.webp'
+import imagen14 from '../../img/metalisteria/IMG_9363_11zon.webp'
+import imagen15 from '../../img/metalisteria/IMG_9364_11zon.webp'
+import imagen16 from '../../img/metalisteria/IMG_9365_11zon.webp'
 
 export const Metalisteria = () => {
   return (
     <div className="container mt-3">
+      
+      <div className="shadow shadow-lg" id="contenedorText"></div>
+
+    <h1 className="text-center shadow">METALISTERIA</h1> 
+
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
 
         <div className="carousel-inner">
           <div className="carousel-item active">
             {/* <!-- AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/1.jpg"--> */}
-            {/* <img id="img1" src="./img/IMG_9362.jpg" className="d-block" alt="..." width="100%" /> */}
+            <img id="img1" src={imagen13} className="d-block" alt="..." width="100%" />
           </div>
           <div className="carousel-item">
             {/* <!--AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/2.jpg"--> */}
-            {/* <img id="img1" src="img/IMG_9363.jpg" className="d-block" alt="..." width="100%" /> */}
+            <img id="img1" src={imagen14} className="d-block" alt="..." width="100%" />
           </div>
           <div className="carousel-item">
             {/* <!--AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/52.jpg"--> */}
-            {/* <img id="img1" src="img/IMG_9364.jpg" className="d-block" alt="..." width="100%" /> */}
+            <img id="img1" src={imagen15} className="d-block" alt="..." width="100%" />
           </div>
           <div className="carousel-item">
             {/* <!--AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/6.jpg"--> */}
-            {/* <img id="img1" src="./img/IMG_9365.jpg" className="d-block" alt=".." width="100%" /> */}
+            <img id="img1" src={imagen16} className="d-block" alt=".." width="100%" />
           </div>
 
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -39,7 +60,7 @@ export const Metalisteria = () => {
           <h2>INTRODUCCIÓN</h2>
 
           <div className="thumbnail m-2">
-            {/* <img src="./img/15094.jpg" alt="Miniatura" width="250" height="200" /> */}
+            <img src={imagen2} alt="Miniatura" width="250" height="200" />
             {/* <!--IMAGEN MINIATURA--> */}
           </div>
 
@@ -76,7 +97,7 @@ export const Metalisteria = () => {
           <h2>JUSTIFICACIÓN</h2>
 
           <div className="thumbnail1 m-2">
-            {/* <img src="./img/2002.i515.001_modern_students_flat_icons-13.jpg" alt="Miniatura" width="200" height="200" /> */}
+            <img src={imagen1} alt="Miniatura" width="200" height="200" />
           </div>
 
           <p>
@@ -206,15 +227,16 @@ export const Metalisteria = () => {
           <span className="linea"></span>
           <section className="galeria">
             {/* <!-- se agregan las imgenes a la galeria y se vinculan entre --> */}
-            {/* <img src="./img/IMG_2020.jpg" alt="" />
-            <img src="./img/IMG_2021.jpg" alt="" />
-            <img src="./img/IMG_2022.jpg" alt="" />
-            <img src="./img/IMG_2025.jpg" alt="" />
-            <img src="./img/IMG_2026.jpg" alt="" />
-            <img src="./img/IMG_2027.jpg" alt="" />
-            <img src="./img/IMG_2029.jpg" alt="" />
-            <img src="./img/IMG_2030.jpg" alt="" />
-            <img src="./img/IMG_2031.jpg" alt="" /> */}
+            <img src={imagen3} alt="" />
+            <img src={imagen4} alt="" />
+            <img src={imagen5} alt="" />
+            <img src={imagen6} alt="" />
+            <img src={imagen7} alt="" />
+            <img src={imagen8} alt="" />
+            <img src={imagen9} alt="" />
+            <img src={imagen10} alt="" />
+            <img src={imagen11} alt="" />
+            <img src={imagen12} alt="" />
 
             {/* <!-- se agregan las flechas para pasar de una imagen a otra y la X para salir --> */}
 
@@ -321,7 +343,7 @@ export const Metalisteria = () => {
               </div>
             </div>
             <div className="card shadow m-3" style={{ width: "30rem" }} id="foto">
-              {/* <img src="img/IMG_9952.jpg" className="card-img-top" alt="..." /> */}
+              <img src={pelufoImg} className="card-img-top" alt="..." />
               {/* <!--SE CREA UNA TARJETA PARA MOSTRAR LA INFORMACIÓN DEL PROFESORY SU IMAGEN--> */}
               <div className="card-body">
                 <h5 className="card-title text-center">ING. ARLEX OTAVO MENDEZ</h5>
@@ -329,6 +351,7 @@ export const Metalisteria = () => {
             </div>
           </div>
         </div>
+
         <footer className="bg-light text-center text-white shadow">
           {/* <!-- Grid container --> */}
           <div className="container p-4 pb-0" id="face">

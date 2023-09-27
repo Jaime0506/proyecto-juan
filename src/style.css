@@ -22,7 +22,7 @@ body {
 /* ESTILOS PARA LA NAVEGACION */
 #nav {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1em;
   background-color: rgb(144, 255, 33) !important;
 }
 
@@ -148,4 +148,12 @@ p {
   line-height: 30px;
   text-decoration: none;
   text-align: center;
+}
+
+#profe {
+  float: left;
+}
+
+#profes {
+  margin-left: 2px;
 }

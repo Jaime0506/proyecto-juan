@@ -3,7 +3,6 @@ import imagen2 from "../../img/sistemas/2.webp"
 import imagen3 from "../../img/sistemas/3.webp"
 import imagen4 from "../../img/sistemas/12084830_20943991.webp"
 import imagen5 from "../../img/sistemas/31745931_7855558.webp"
-
 import imagen6 from "../../img/sistemas/IMG (1).webp"
 import imagen7 from "../../img/sistemas/IMG (2).webp"
 import imagen8 from "../../img/sistemas/IMG (3).webp"
