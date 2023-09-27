@@ -1,123 +1,68 @@
+import profe from "../../img/automotriz/profe_11zon.webp"
+import imagen1 from '../../img/automotriz/automotriz_11zon.webp'
+import imagen2 from '../../img/automotriz/automotriz1_11zon.webp'
+import imagen3 from '../../img/automotriz/IMG (1)_11zon.webp'
+import imagen4 from '../../img/automotriz/IMG (2)_11zon.webp'
+import imagen5 from '../../img/automotriz/IMG (3)_11zon.webp'
+import imagen6 from '../../img/automotriz/IMG (4)_11zon.webp'
+import imagen7 from '../../img/automotriz/IMG (5)_11zon.webp'
+import imagen8 from '../../img/automotriz/IMG (6)_11zon.webp'
+import imagen9 from '../../img/automotriz/IMG (7)_11zon.webp'
+import imagen10 from '../../img/automotriz/IMG (8)_11zon.webp'
+import imagen11 from '../../img/automotriz/IMG (9)_11zon.webp'
+import imagen12 from '../../img/automotriz/IMG (10)_11zon.webp'
+import imagen13 from '../../img/automotriz/IMG (11)_11zon.webp'
+import imagen14 from '../../img/automotriz/IMG (12)_11zon.webp'
+import imagen15 from '../../img/automotriz/IMG (13)_11zon.webp'
+import imagen16 from '../../img/automotriz/IMG (14)_11zon.webp'
+import imagen17 from '../../img/automotriz/IMG (15)_11zon.webp'
+import imagen18 from '../../img/automotriz/IMG (16)_11zon.webp'
+import imagen19 from '../../img/automotriz/IMG (17)_11zon.webp'
+import imagen20 from '../../img/automotriz/IMG (18)_11zon.webp'
+import imagen21 from '../../img/automotriz/IMG (19)_11zon.webp'
+import imagen22 from '../../img/automotriz/IMG (21)_11zon.webp'
+import imagen23 from '../../img/automotriz/IMG (22)_11zon.webp'
+import imagen24 from '../../img/automotriz/IMG (23)_11zon.webp'
+import imagen25 from '../../img/automotriz/IMG (24)_11zon.webp'
+
+
 export const MecanicaAuto = () => {
   return (
     <div className="container mt-3">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light shadow"
-        style="background-color: #51f948;"
-        id="nav"
-      >
-        <div class="container-fluid">
-          {/*<!-- <a class="navbar-brand" href="#">*/}
-
-          {/*<!--MENU DE NAVEGACIÓN-->*/}
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          {/*<!--CONTENEDOR DEL MENÚ DE NAVEGACION CON LOS DIFERENTES LINKS DE CADA ESPECIALIDAD-->*/}
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                {/*<!--SE ESTABLE EL LINK DE INCIO Y EL NOMBRE QEU SE VA A VER EN EL MENÚ-->*/}
-                <a class="nav-link" aria-current="page" href="index.html">
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE SISTEMAS Y COMPUTACIÓN Y EL NOMBRE QEU SE VA A VER EN EL MENÚ DE NAVEGACIÓN-->*/}
-                <a class="nav-link" href="../Sistemas/sistemas.html">
-                  Sistemas y Computación
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE DIBUJO TÉCNICO Y EL NOMBRE QEU SE VA A VER EN EL MENÚ DE NAVEGACIÓN-->*/}
-                <a class="nav-link" href="#">
-                  Dibujo Técnico
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE METALISTERIA Y EL NOMBRE QEU SE VA A VER EN EL MENÚ DE NAVEGACIÓN-->*/}
-                <a class="nav-link" href="../metalisteria/metalisteria.html">
-                  Metalistería
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE MECANICA AUTOMOTRIZ Y EL NOMBRE QEU SE VA A VER EN EL MENÚ DE NAVEGACIÓN-->*/}
-                <a class="nav-link" href="#">
-                  Mecánica Automotriz
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE MECÁNICA INDUSTRIAL Y EL NOMBRE QEU SE VA A VER EN EL MENÚ DE NAVEGACIÓN-->*/}
-                <a class="nav-link" href="../m.industrial/m.idustrial.html">
-                  Mecánica Industrial
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE ELECTRICIDAD Y EL NOMBRE QEU SE VA A VER EN EL MENÚ DE NAVEGACIÓN-->*/}
-                <a class="nav-link" href="../electricidad/electricidad.html">
-                  Electricidad
-                </a>
-              </li>
-              <li class="nav-item">
-                {/*<!--SE ESTABLESE EL LINK DE ELECTRÓNICA Y EL NOMBRE QEU SE VA A VER EN EL MENU DE NAVEGACIÓN -->*/}
-                <a class="nav-link" href="../electronica/electronica.html">
-                  Electrónica
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="../projects/projects.html">
-                  Proyectos de Grado
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <nav id="nav1">
-        <h1>MECÁNICA AUTOMOTRIZ</h1>
-      </nav>
+          <h1 className="text-center shadow">MECÁNICA AUTOMOTRIZ</h1>
       {/*<!--IMAGENES DEL CARRUSEL DE LA ESPECIALIDAD-->*/}
       <div
         id="carouselExampleControls"
-        class="carousel slide "
+        className="carousel slide "
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             {/*<!-- AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/1.jpg"-->*/}
             <img
               id="img1"
-              src="img.automotriz/IMG (23).jpg"
-              class="d-block"
+              src={imagen24}
+              className="d-block"
               alt="..."
               width="100%"
             />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             {/*<!--AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/2.jpg"-->*/}
             <img
               id="img1"
-              src="img.automotriz/IMG (24).jpg"
-              class="d-block"
+              src={imagen25}
+              className="d-block"
               alt="..."
               width="100%"
             />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             {/*<!--AQUI SE AGRAGA LA IMAGEN PARA SU VISUALIZACIÓN EN EL src="img/img.industrial/3.jpg"-->*/}
             <img
               id="img1"
-              src="img.automotriz/IMG (23).jpg"
-              class="d-block"
+              src={imagen24}
+              className="d-block"
               alt=".."
               width="100%"
             />
@@ -125,34 +70,40 @@ export const MecanicaAuto = () => {
         </div>
         {/* <!--BOTONES DEL CARRUSEL PARA QUE SE DESPALCE ASI LA SIGUIENTE IMAGEN O ASI LA ANTERIOR IMAGEN--> */}
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Anterior</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Siguiente</span>
         </button>
       </div>
-      <div class="container-fluid pt-2 shadow" id="contenedorText">
+      <div className="container-fluid pt-2 shadow" id="contenedorText">
         {/* <!--INFORMACION DEL TALLER DE MECANICA INDUSTRIAL--> */}
 
         {/* <!-- INTRODUCIÓN DEL AREA--> */}
-        <H2>
+        <h2>
           <b>INTRODUCCIÓN</b>
-        </H2>
-        <div class="thumbnail">
+        </h2>
+        <div className="thumbnail">
           <img
-            src="img.automotriz/automotriz.jpg"
+            src={imagen1}
             alt="Miniatura"
             width="300"
             height="240"
@@ -194,9 +145,9 @@ export const MecanicaAuto = () => {
         </p>
         {/* <!--JUSTIFICACION DEL AREA--> */}
         <h2>JUSTIFICACIÓN</h2>
-        <div class="thumbnail1">
+        <div className="thumbnail1">
           <img
-            src="img.automotriz/automotriz1.jpg"
+            src={imagen2}
             alt="Miniatura"
             width="260"
             height="240"
@@ -247,11 +198,11 @@ export const MecanicaAuto = () => {
         {/*<!--OBJETIVOS DEL AREA: OBJETIVO GENERAL Y ESPECIFICOS-->*/}
         <h2>OBJETIVOS Y METAS DE APRENDIZAJE</h2>
         {/*<!-- se crea un acordion plegable para los objetivos -->*/}
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button"
+                className="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -263,10 +214,10 @@ export const MecanicaAuto = () => {
             </h2>
             <div
               id="collapseOne"
-              class="accordion-collapse collapse show"
+              className="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <ul>
                   <li>
                     <p>
@@ -286,10 +237,10 @@ export const MecanicaAuto = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -301,10 +252,10 @@ export const MecanicaAuto = () => {
             </h2>
             <div
               id="collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <ul>
                   <li>
                     <p>
@@ -416,332 +367,331 @@ export const MecanicaAuto = () => {
         </div>
 
         {/*<!--creacion de la galeria-->*/}
-        <span class="linea"></span>
-        <section class="galeria">
+        <span className="linea"></span>
+        <section className="galeria">
           {/*<!-- se agregan las imgenes a la galeria y se vinculan entre -->*/}
-          <a href="#image1">
-            <img src="img.automotriz/IMG (1).jpg" alt="" />
-          </a>
-          <a href="#image2">
-            <img src="img.automotriz/IMG (2).jpg" alt="" />
-          </a>
-          <a href="#image3">
-            <img src="img.automotriz/IMG (3).jpg" alt="" />
-          </a>
-          <a href="#image4">
-            <img src="img.automotriz/IMG (4).jpg" alt="" />
-          </a>
-          <a href="#image5">
-            <img src="img.automotriz/IMG (5).jpg" alt="" />
-          </a>
-          <a href="#image6">
-            <img src="img.automotriz/IMG (6).jpg" alt="" />
-          </a>
-          <a href="#image7">
-            <img src="img.automotriz/IMG (7).jpg" alt="" />
-          </a>
-          <a href="#image8">
-            <img src="img.automotriz/IMG (8).jpg" alt="" />
-          </a>
-          <a href="#image9">
-            <img src="img.automotriz/IMG (9).jpg" alt="" />
-          </a>
-          <a href="#image10">
-            <img src="img.automotriz/IMG (10).jpg" alt="" />
-          </a>
-          <a href="#image11">
-            <img src="img.automotriz/IMG (11).jpg" alt="" />
-          </a>
-          <a href="#image12">
-            <img src="img.automotriz/IMG (12).jpg" alt="" />
-          </a>
-          <a href="#image13">
-            <img src="img.automotriz/IMG (13).jpg" alt="" />
-          </a>
-          <a href="#image14">
-            <img src="img.automotriz/IMG (14).jpg" alt="" />
-          </a>
-          <a href="#image15">
-            <img src="img.automotriz/IMG (15).jpg" alt="" />
-          </a>
-          <a href="#image16">
-            <img src="img.automotriz/IMG (16).jpg" alt="" />
-          </a>
-          <a href="#image17">
-            <img src="img.automotriz/IMG (17).jpg" alt="" />
-          </a>
-          <a href="#image18">
-            <img src="img.automotriz/IMG (18).jpg" alt="" />
-          </a>
+          
+            <img src={imagen3} alt="" />
+        
+        
+            <img src={imagen4} alt="" />
+          
+          
+            <img src={imagen5} alt="" />
+          
+          
+            <img src={imagen6} alt="" />
+          
+          
+            <img src={imagen7} alt="" />
+        
+          
+            <img src={imagen8} alt="" />
+        
+          
+            <img src={imagen8} alt="" />
+          
+          
+            <img src={imagen9} alt="" />
+    
+          
+            <img src={imagen10}alt="" />
+        
+          
+            <img src={imagen11}alt="" />
+          
+          
+            <img src={imagen12} alt="" />
+          
+          
+            <img src={imagen13} alt="" />
+          
+          
+            <img src={imagen14} alt="" />
+          
+         
+            <img src={imagen15} alt="" />
+          
+         
+            <img src={imagen16} alt="" />
+          
+         
+            <img src={imagen17} alt="" />
+         
+            <img src={imagen18}alt="" />
+        
+        
+            <img src={imagen19} alt="" />
+          
 
           {/*<!-- se agregan las flechas para pasar de una imagen a otra y la X para salir -->*/}
 
-          {/* <article class="light-box" id="image1">
-                    <a href="#image20" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+          {/* <article className="light-box" id="image1">
+                    <a href="#image20" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (1).jpg" alt="" />
-                    <a href="#image2" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image2" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
 
-                <article class="light-box" id="image2">
-                    <a href="#image1" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image2">
+                    <a href="#image1" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <img src="img.automotriz/IMG (2).jpg" alt="" />
-                    <a href="#image3" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <img src={imagen3} alt="" />
+                    <a href="#image3" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image3">
-                    <a href="#image2" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image3">
+                    <a href="#image2" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (3).jpg" alt="" />
-                    <a href="#image4" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image4" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image4">
-                    <a href="#image3" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image4">
+                    <a href="#image3" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (4).jpg" alt="" />
-                    <a href="#image5" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image5" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image5">
-                    <a href="#image4" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image5">
+                    <a href="#image4" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (5).jpg" alt="" >
-                    <a href="#image6" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image6" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
-                <article class="light-box" id="image6">
-                    <a href="#image5" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image6">
+                    <a href="#image5" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (6).jpg" alt="">
-                    <a href="#image7" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image7" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image7">
-                    <a href="#image6" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image7">
+                    <a href="#image6" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (7).jpg" alt="">
-                    <a href="#image8" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image8" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image8">
-                    <a href="#image7" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image8">
+                    <a href="#image7" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (8).jpg" alt="">
-                    <a href="#image9" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image9" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image9">
-                    <a href="#image8" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image9">
+                    <a href="#image8" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (9).jpg" alt="">
-                    <a href="#image10" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image10" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image10">
-                    <a href="#image9" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image10">
+                    <a href="#image9" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (10).jpg" alt="">
-                    <a href="#image11" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image11" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image11">
-                    <a href="#image10" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image11">
+                    <a href="#image10" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (11).jpg" alt="">
-                    <a href="#image12" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image12" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image12">
-                    <a href="#image11" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image12">
+                    <a href="#image11" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (12).jpg" alt="">
-                    <a href="#image13" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image13" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image13">
-                    <a href="#image12" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image13">
+                    <a href="#image12" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (13).jpg" alt="">
-                    <a href="#image14" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image14" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image14">
-                    <a href="#image13" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image14">
+                    <a href="#image13" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (14).jpg" alt="">
-                    <a href="#image15" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image15" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image15">
-                    <a href="#image14" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image15">
+                    <a href="#image14" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (15).jpg" alt="">
-                    <a href="#image16" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image16" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image16">
-                    <a href="#image15" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image16">
+                    <a href="#image15" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (16).jpg" alt="">
-                    <a href="#image17" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image17" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image17">
-                    <a href="#image16" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image17">
+                    <a href="#image16" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (17).jpg" alt="">
-                    <a href="#image18" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image18" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image18">
-                    <a href="#image17" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image18">
+                    <a href="#image17" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (18).jpg" alt="">
-                    <a href="#image19" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image19" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image19">
-                    <a href="#image18" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image19">
+                    <a href="#image18" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (19).jpg" alt="">
-                    <a href="#image20" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image20" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article>
 
-                <article class="light-box" id="image20">
-                    <a href="#image19" class="next"><i class="fa-solid fa-circle-chevron-left fa-2xl"
+                <article className="light-box" id="image20">
+                    <a href="#image19" className="next"><i className="fa-solid fa-circle-chevron-left fa-2xl"
                             style="color: #7fba00;"></i></a>
                     <img src="img.automotriz/IMG (21).jpg" alt="">
-                    <a href="#image21" class="next"><i class="fa-solid fa-circle-chevron-right fa-2xl"
+                    <a href="#image21" className="next"><i className="fa-solid fa-circle-chevron-right fa-2xl"
                             style="color: #7fba00;"></i></a>
-                    <a href="#galeria" class="close"><i class="fa-solid fa-circle-xmark fa-2xl"
+                    <a href="#galeria" className="close"><i className="fa-solid fa-circle-xmark fa-2xl"
                             style="color: #ff0000;"></i></a>
                 </article> */}
         </section>
-        <span class="linea"></span>
+        <span className="linea"></span>
 
         {/* <!--IMAGEN DEL DOCENTE QUE DICTA EL AREA--> */}
-        <h2 class="text-center">DOCENTES DE LA ESPECIALIDAD</h2>
-        <div class="d-flex justify-content-center align-items-center m-3">
-          <div class="card shadow" style="width: 30rem;" id="foto">
+        <h2 className="text-center mt-2">DOCENTES DE LA ESPECIALIDAD</h2>
+        <div className="d-flex justify-content-center align-items-center m-3">
+          <div className="card shadow mb-4" style={{width: "30rem"}} id="foto">
             <img
-              src="img.automotriz/profe.jpg"
-              class="card-img-top"
+              src={profe}
+              className="card-img-top"
               alt="..."
             />
             {/* <!--SE CREA UNA TARJETA PARA MOSTRAR LA INFORMACIÓN DEL PROFESORY SU IMAGEN--> */}
-            <div class="card-body">
-              <h5 class="card-title text-center">
+            <div className="card-body">
+              <h5 className="card-title text-center">
                 FERNAN CAMILO GARCIA PERDOMO
               </h5>
             </div>
           </div>
         </div>
       </div>
-      <footer class="bg-light text-center text-white">
+      <footer className="bg-light text-center text-white">
         {/* <!-- Grid container --> */}
-        <div class="container p-4 pb-0" id="face">
+        <div className="container p-4 pb-0" id="face">
           {/* <!-- Section: Social media --> */}
-          <section class="mb-4">
+          <section className="mb-4">
             {/* <!-- Facebook --> */}
             <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #3b5998;"
+              className="btn text-white btn-floating m-1"
+              style={{backgroundColor: "#3b5998"}}
               href="https://www.facebook.com/IETIndustrial/?locale=es_LA"
               role="button"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
 
             {/* <!-- Twitter --> */}
             <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #55acee;"
+              className="btn text-white btn-floating m-1"
+              style={{backgroundColor: "#55acee"}}
               href="https://twitter.com/IETFELIXTIBERIO"
               role="button"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
 
             {/* <!-- Google --> */}
             <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #dd4b39;"
+              className="btn text-white btn-floating m-1"
+              style={{backgroundColor: "#dd4b39"}}
               href="https://q.plataformaintegra.net/ietfelixtiberio/"
               role="button"
             >
-              <i class="fab fa-google"></i>
+              <i className="fab fa-google"></i>
             </a>
 
             {/* <!-- Instagram --> */}
             <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #df3adf;"
+              className="btn text-white btn-floating m-1"
+              style={{backgroundColor: "#df3adf"}}
               href="https://www.instagram.co
                             
                             
                         m/explore/locations/1018030579/institucion-educativa-tecnica-felix-tiberio-guzman/"
               role="button"
             >
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
           </section>
           {/* <!-- Section: Social media --> */}
@@ -750,12 +700,12 @@ export const MecanicaAuto = () => {
 
         {/* <!-- Copyright --> */}
         <div
-          class="text-center p-3"
-          style="background-color: rgb(15, 15, 15);"
+          className="text-center p-3"
+          style={{backgroundColor: "rgb(15, 15, 15)"}}
           id="copy"
         >
           © 2023 Copyright:
-          <a class="text-white" href="http://www.ftg.edu.co ">
+          <a className="text-white" href="http://www.ftg.edu.co ">
             INSTITUCIÓN F.T.G
           </a>
         </div>

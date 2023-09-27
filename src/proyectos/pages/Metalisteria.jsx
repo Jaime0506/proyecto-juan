@@ -20,9 +20,8 @@ export const Metalisteria = () => {
   return (
     <div className="container mt-3">
       
-      <div className="shadow shadow-lg" id="contenedorText"></div>
-
-    <h1 className="text-center shadow">METALISTERIA</h1> 
+      <div className="shadow shadow-lg" id="contenedorText">
+            <h1 className="text-center shadow">METALISTERIA</h1> 
 
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
 
@@ -332,7 +331,7 @@ export const Metalisteria = () => {
           </section>
           <span className="linea"></span>
 
-          <h2 className="text-center">DOCENTES DE LA ESPECIALIDAD</h2>
+          <h2 className="text-center mt-2">DOCENTES DE LA ESPECIALIDAD</h2>
 
           <div className="container d-flex row justify-content-center " id="profes">
             <div className="card shadow m-3" style={{ width: "30rem" }} id="foto">
@@ -351,6 +350,9 @@ export const Metalisteria = () => {
             </div>
           </div>
         </div>
+      </div>
+
+    
 
         <footer className="bg-light text-center text-white shadow">
           {/* <!-- Grid container --> */}
