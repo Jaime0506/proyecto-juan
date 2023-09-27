@@ -1,7 +1,3 @@
-import second from 'first'
-
-
-
 export const MecanicaIndus = () => {
   return (
     <div className="container mt-3">

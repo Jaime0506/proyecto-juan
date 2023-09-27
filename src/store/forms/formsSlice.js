@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    forms: []
+    data: []
 }
 
 export const formsSlice = createSlice({
@@ -10,8 +10,12 @@ export const formsSlice = createSlice({
     reducers: {  
         clearForms: (state) => {
             state.forms = []
+        },
+
+        loadingForms: (state, { payload }) => {
+            state.data = payload
         }
     },
 });
 
-export const { clearForms } = formsSlice.actions;
+export const { clearForms, loadingForms } = formsSlice.actions;
