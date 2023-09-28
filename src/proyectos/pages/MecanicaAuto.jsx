@@ -18,17 +18,13 @@ import imagen16 from '../../img/automotriz/IMG (14)_11zon.webp'
 import imagen17 from '../../img/automotriz/IMG (15)_11zon.webp'
 import imagen18 from '../../img/automotriz/IMG (16)_11zon.webp'
 import imagen19 from '../../img/automotriz/IMG (17)_11zon.webp'
-import imagen20 from '../../img/automotriz/IMG (18)_11zon.webp'
-import imagen21 from '../../img/automotriz/IMG (19)_11zon.webp'
-import imagen22 from '../../img/automotriz/IMG (21)_11zon.webp'
-import imagen23 from '../../img/automotriz/IMG (22)_11zon.webp'
 import imagen24 from '../../img/automotriz/IMG (23)_11zon.webp'
 import imagen25 from '../../img/automotriz/IMG (24)_11zon.webp'
 
 
 export const MecanicaAuto = () => {
   return (
-    <div className="container mt-3">
+    <div className="container mt-3 justify-content-center">
           <h1 className="text-center shadow">MECÁNICA AUTOMOTRIZ</h1>
       {/*<!--IMAGENES DEL CARRUSEL DE LA ESPECIALIDAD-->*/}
       <div
