@@ -157,3 +157,9 @@ p {
 #profes {
   margin-left: 2px;
 }
+
+#contenedorText {
+  width: 100%;
+  background-color: white;
+  border: 1px solid chartreuse;
+}
