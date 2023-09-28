@@ -9,13 +9,26 @@ export const formsSlice = createSlice({
     initialState: initialState,
     reducers: {  
         clearForms: (state) => {
-            state.forms = []
+            state.data = []
         },
 
         loadingForms: (state, { payload }) => {
             state.data = payload
+        },
+
+        updateForms: (state, { payload }) => {
+            state.data = state.data.map((form) => {
+                if (form.id === payload.id) {
+                    form.state = !payload.state
+
+                    return form
+                }
+
+                return form
+            })
         }
+
     },
 });
 
-export const { clearForms, loadingForms } = formsSlice.actions;
+export const { clearForms, loadingForms, updateForms } = formsSlice.actions;

@@ -4,13 +4,14 @@ import { Inicio, Sistemas, Dibujo, Electricidad, Electronica, MecanicaAuto, Meca
 import { Navbar } from "../components/Navbar";
 
 export const ProyectosRoutes = () => {
-    // + /proyectos/
+    // + /proyectos/ +
+
     return (
         <>
             <Navbar />
 
             <Routes>
-                <Route path="/*" element={<Inicio />} />
+                <Route path="/" element={<Inicio />} />
                 <Route path="/sistemas" element={<Sistemas />} />
                 <Route path="/dibujo" element={<Dibujo />} />
                 <Route path="/metalisteria" element={<Metalisteria />} />
@@ -19,6 +20,8 @@ export const ProyectosRoutes = () => {
                 <Route path="/electricidad" element={<Electricidad />} />
                 <Route path="/electronica" element={<Electronica />} />
                 <Route path="/grado" element={<ProyectosGrado />} />
+
+                <Route path="*" element={<h1>Error 404 no existe esta ruta</h1>}/>
             </Routes>
         </>
     );
