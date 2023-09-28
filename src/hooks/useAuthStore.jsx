@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { onCheckinAuth, onLogin, onLogout, onRegister } from "../store/auth/thunks"
 
 export const useAuthStore = () => {
-    const { status } = useSelector(store => store.auth)
+    const { status, id, errorMessage } = useSelector(store => store.auth)
     const dispatch = useDispatch()
 
     const handleOnLogin = (formsValue) => {
@@ -23,6 +23,9 @@ export const useAuthStore = () => {
 
     return {
         status,
+        id,
+        errorMessage,
+        
         handleOnLogin,
         handleOnLogout,
         handleOnCheckinAuth,

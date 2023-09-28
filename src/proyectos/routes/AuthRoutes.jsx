@@ -5,10 +5,10 @@ export const AuthRoutes = () => {
   return (
     // auth + /
     <Routes>
-        <Route path="/register" element={<RegisterPage />}/>
-        <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+      <Route path="/login" element={<LoginPage />} />
 
-        <Route path="/*" element={<Navigate to="register" />} />
+      <Route path="/*" element={<Navigate to="register" />} />
     </Routes>
   )
 }

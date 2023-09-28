@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { useFormsStore } from '../../hooks/useFormsStore'
+import { useFormsStore, useAuthStore } from '../../hooks'
+import { Link } from 'react-router-dom'
 
 import img1 from '../../img/proyectos_grado/IMG_1983.webp'
 import img2 from '../../img/proyectos_grado/IMG_1997.webp'
@@ -16,9 +17,10 @@ import img11 from '../../img/proyectos_grado/IMG_2139.webp'
 export const ProyectosGrado = () => {
 
   const { data = [], handleOnLoadingForms } = useFormsStore()
+  const { status, id } = useAuthStore()
 
   useEffect(() => {
-    handleOnLoadingForms()
+    handleOnLoadingForms(true)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -137,7 +139,7 @@ export const ProyectosGrado = () => {
             </thead>
 
             <tbody id="tableUsers">
-              {data.map((form, index) => (
+              {data.filter((form) => form.state).map((form, index) => (
                 <tr key={index}>
                   <td>{form.title}</td>
                   <td>{form.author}</td>
@@ -167,6 +169,14 @@ export const ProyectosGrado = () => {
       <div className="container w-100 text-center mb-3">
         <button className="btn btn-success" id="btn">¡QUIERO SUBIR MI PROYECTO!</button>
       </div>
+
+      {
+        (status === "authenticated" && id == import.meta.env.VITE_ID_ADMIN) ? (
+          <div className="container w-100 text-center mb-3">
+            <Link className="btn btn-success" id="btn" to="/admin" >QUIERO GESTIONAR LOS PROYECTOS</Link>
+          </div>
+        ) : null
+      }
 
       {/* <!-- La etiqueta <footer> sirve para crear un pie de página--> */}
       <footer className="bg-light text-center text-white shadow">
